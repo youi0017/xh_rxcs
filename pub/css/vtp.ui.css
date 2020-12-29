@@ -1,0 +1,311 @@
+/**
+ * css ui
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
+/*== 通用样式 =======================*/
+/* 1. box-header : 使用H5的样式 */
+/* 2. box-close : 关闭标签样式 */
+/*._vui_close{position:absolute; right:10px; top:15px; padding:0 10px; line-height:20px; font-size:18px; border:1px solid #999; background-color:#FFF; cursor:pointer;}*/
+/*
+._vui_close{float:right; padding:0 10px; line-height:20px; font-size:18px; cursor:pointer;}
+._vui_close:hover{color:#F00;}
+*/
+
+/*.pa10{padding:10px;}
+.pL10{padding-left:10px;}*/
+.bR5{border-radius:5px;}
+
+
+/*面板类基础样式*/
+.vui_title{padding-left:10px; color:#191970; background-color:#daeef5;}
+.vui_title b{float:right; margin-right:5px; color:#C1CDCD; cursor:pointer;}
+.vui_title b:hover{color:#8B814C;}
+/*
+.vui_bodybox{}
+.vui_bodycnt{padding:10px; display:flex; align-items:center; min-height:50px;}
+*/
+.vui_body{min-height:30px;}
+.vui_cnt{padding:10px;}
+.vui_footer{padding:5px 10px; border-top:1px dashed #DDD; text-align:right; background-color:#F9F9F9;}
+.vui_footer b{ margin-left:5px;}
+
+
+
+
+/*== 面板 panel =======================*/
+.vui_panel{position:relative; text-align:left; border:1px solid #c3d9e0; background-color:#FFF;}
+/*
+.vui_panel .v_p_title{padding-left:10px; color:#191970; background-color:#E0EEEE; box-shadow:inset 0 -1px 1px #c3d9e0; cursor:pointer;}
+.vui_panel .v_p_title b{float:right; margin-right:5px; color:#C1CDCD;}
+.vui_panel .v_p_title b:hover{color:#8B814C;}
+*/
+/*.vui_panel .v_p_content{display:none;}*/
+
+/*
+//html示例
+<div class="vui_panel " style="width:498px">
+	<h5 class="vui_title">
+		提示信息1
+		<b data-mk="off">×</b>
+		<b data-mk="collapse">▼</b>
+	</h5>
+	<div class="vui_bodybox">
+		<div class="vui_bodycnt">
+			我是内容1<br>
+			我是内容2<br>
+			我是内容3<br>
+		</div>
+	</div>
+	<div class="vui_footer">
+		<b data-mk="okk" class="vui_btn_1">提交</b>
+		<b data-mk="off" class="vui_btn_1">关闭</b>
+	</div>
+</div>
+*/
+
+
+
+/*== 布局 layout =======================*/
+/* html,body{height:100%;} */
+.vui_layout{width:100%; height:100%; display:table; border-width:0; border-collapse:collapse;}
+.vui_layout thead td{height:59px; border-bottom:1px solid #c3d9e0;}
+.vui_layout tfoot td{height:30px; border-top:1px solid #c3d9e0; text-align:center;}	
+.vui_layout tbody td{text-align:left;}
+.vui_layout tbody td.nav{width:250px; background-color:#F0F0F0;}
+.vui_layout tbody td.break{text-align:center; width:5px; border-left:1px solid #A4D3EE; border-right:1px solid #A4D3EE; background-color:#E0EEEE; overflow:hidden; cursor:pointer;}
+/*
+//调用示例：2015年12月23日
+<table class="vui_layout">
+	<thead><tr><td colspan="3">
+		<!-- this is HEAD htmlCntent -->
+	</td></tr></thead>
+
+	<tfoot><tr><td colspan="3">
+		<!-- this is FOOT htmlCntent -->
+	</td></tr></tfoot>
+
+	<tbody><tr>
+		<td valign="top" class="nav">
+			<!-- this is NAV htmlCntent -->
+		</td><td class="break"></td><td valign="top">
+			<!-- this is MAIN htmlCntent -->
+		</td></tr></tbody>
+</table>
+*/
+
+
+/*== 按钮 button =======================*/
+/*
+	调用示例
+	<span class="vui_btn_1">button</span>
+*/
+
+/*== button1 生动 =======================*/
+.vui_btn_1{padding:2px 10px; color:#444; border:1px solid #999; border-right-color:#555; border-bottom-color:#555; border-radius:3px; box-shadow:1px 1px 1px #777; background-color:#FFF; cursor:pointer;}
+.vui_btn_1:hover{text-decoration:none; border:1px #999 solid; border-left-color:#555; border-top-color:#555; box-shadow:inset 0 0 1px #888;}
+
+/*== button2 简单 =======================*/
+.vui_btn_2{padding:2px 10px; color:#444; border:1px solid #999; box-shadow:inset -1px -1px 2px #EEE; border-radius:2px; background-color:#FFF; cursor:pointer;}
+.vui_btn_2:hover{text-decoration:none; box-shadow:inset 1px 1px 2px #EEE;}
+
+/*== button3 简捷 =======================*/
+.vui_btn_3{padding:2px 10px; color:#444; border:2px solid #777; border-top:1px solid #999; border-left:1px solid #999; border-radius:2px; background-color:#FFF; cursor:pointer; }
+.vui_btn_3:hover{text-decoration:none; border:2px solid #777; border-bottom:1px solid #999; border-right:1px solid #999; }
+
+
+
+
+/*== 表单 上传 =======================*/
+/* 继承win的主体样式， 并加入上传域的样式 */
+.vui_file{position:relative;}
+.vui_file .appear_common{margin-right:100px; width:290px; height:20px; border:1px solid #999; overflow:hidden;}
+.vui_file .file_btn{position:absolute; left:300px; top:0; width:70px; z-index:99;}
+.vui_file .file_btn_false{text-align:center; background-color: #CCC;}
+.vui_file .file_btn_true{height:22px; filter:alpha(opacity:0); opacity:0; z-index:100;}
+/*
+// html示例
+	<div class="vui_file">
+		<div id="file_input_false" class="appear_common" contentEditable="true"></div>
+		<div id="select_file_btn" class="file_btn file_btn_false appear_common">浏览...</div>
+		<input id="file" type="file" name="file" class="file_btn file_btn_true" onchange="document.getElementById('file_input_false').innerHTML=this.value" />
+	</div>
+*/
+
+
+/*== 表单 select =======================*/
+/*select特殊样式 不支持IE 2015年11月6日*/
+label.re_lab{position:relative; display: inline-block;}
+label.re_lab::after{content:"\25bc"; position:absolute; top:0; right:0; width:35px; line-height:35px; text-align:center; background:#919191; color:#FFF; border-radius:0 3px 3px 0; pointer-events:none; }
+label.re_lab select{-webkit-appearance:none; -moz-appearance:none; appearance:none; padding:4px; 30px 0 4px; width:200px; height:35px; vertical-align:middle; text-align:left; font-size:18px; color:#000099; box-shadow:inset 0 0 5px #C1CDC1; border:1px solid #acacac; border-radius:5px; cursor:pointer; outline:none; }
+label.re_lab select option{padding:5px;}
+label.re_lab select option:nth-child(even){ background-color:#FAFAFA; }
+/*
+// html示例
+<label class="re_lab">
+	<select name="">
+		<option value="1" selected>xxx
+		<option value="2">www
+	</select>
+</label>
+*/
+
+
+
+/*== 目录树 tree =======================*/
+.vui_tree{list-style-type:none;}
+/*.vui_tree_close{height:20px;}*/
+.vui_tree li{margin-left:15px;}
+.vui_tree li:hover{background-color:#F5F5F5;}
+.vui_tree li:first-child{margin-left:0; cursor:pointer;}
+.vui_tree span{margin:0 3px; padding-right:25px; color:#999; background:url("../pic/ico/ff_icon.png") no-repeat 14px 3px;}
+.vui_tree ._tree_cp span{background-position:15px -45px;}
+.vui_tree li a{color:#555;}
+/*
+<ul class="vui_tree" style="height:20px;">
+	<li class="vui_tree_fold"><span class="floder_cp">＋</span>静态缓存管理</li>
+	<li><span>┝</span><a href="/adm-up_htm" target="main_win">更新静态缓存</a>
+	</li>
+	<li><span>┕</span><a href="javascript:void(0)" target="main_win">清除静态缓存</a>
+	</li>
+</ul>
+*/
+
+
+
+/*
+menu
+
+
+*/
+.vui_menu{line-height:36px; }
+.vui_menu ul{/*margin-top:1px;*/ background-color:#FDFDFD; height:36px; border:1px solid #C9E2E2; list-style-type:circle; text-shadow:1px 1px 1px #CCC;}
+.vui_menu .selectedUL{height:auto;}
+.vui_menu li{margin-left:15px; }
+.vui_menu a{color:#555;}
+.vui_menu a.selectedA{color:#F00;}
+.vui_menu h5{padding-left:15px; background-color:#E0EEEE; cursor:pointer;}
+.vui_menu h5 b{float:right; margin-right:15px; color:cadetblue; font-size:15px;}
+
+
+
+/*== 数据表格 datable 20160921 =======================*/
+.vui_datagrid{border:1px solid #999;}
+.vui_datagrid table{width:100%; border:none; border-collapse:collapse; overflow:visible;}
+.vui_datagrid .ttl{padding-left:5px; border:1px solid #999; border-bottom-width:0; letter-spacing:5px;}
+.vui_datagrid .thd{font-weight:600; text-align:center; background-color:#EEE; letter-spacing:5px;}
+.vui_datagrid tr:hover{background-color:#FFFAF0;}
+.vui_datagrid td{padding:0 5px; max-width:200px; border:solid #999 1px; word-wrap:break-word; overflow:hidden;}
+.vui_datagrid input[type="checkbox"]{cursor:pointer;}
+
+/*
+<div id="dgTbl" class="vui_datagrid" style="width: 900px;">
+	<form name="datable" method="post">
+		<h5 class="ttl">我是表格标题</h5>
+		<div id="dgTblBtn" class="ttl" style="padding:2px;"><a data-mk="0" class="vui_btn_2">增加</a>  <a data-mk="1" class="vui_btn_2">删除</a>  <a data-mk="2" class="vui_btn_2">修改</a> 
+		</div>
+		<table>
+			<tbody>
+				<tr class="thd">
+					<td>&nbsp;</td>
+					<td class="t_c">ID</td>
+					<td class="td_name">名称</td>
+					<td class="td_src">地址</td>
+					<td class="td_link">链接</td>
+				</tr>
+				<tr id="tr_0">
+					<td class="t_c">
+						<input type="checkbox" name="_0" value="0">
+					</td>
+					<td class="t_c">1</td>
+					<td data-mk="td" class="td_name">aa</td>
+					<td data-mk="td" class="td_src">src1</td>
+					<td data-mk="td" class="td_link">link1</td>
+				</tr>
+				<tr id="tr_1">
+					<td class="t_c">
+						<input type="checkbox" name="_1" value="0">
+					</td>
+					<td class="t_c">2</td>
+					<td data-mk="td" class="td_name">ba</td>
+					<td data-mk="td" class="td_src">src2</td>
+					<td data-mk="td" class="td_link">link2</td>
+				</tr>
+				<tr id="tr_2">
+					<td class="t_c">
+						<input type="checkbox" name="_2" value="0">
+					</td>
+					<td class="t_c">3</td>
+					<td data-mk="td" class="td_name">cd</td>
+					<td data-mk="td" class="td_src">src3</td>
+					<td data-mk="td" class="td_link">link3</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</div>
+*/
+
+/*
+//-- 数据表格按钮 暂时不用 databtn 20160921 -----------------------
+.vui_databtn{line-height:30px;}
+.vui_databtn a{margin:0 5px;}
+*/
+
+/*== 窗口0 简单窗口 =======================*/
+/*
+.vui_win_2{padding:10px; width:50%; border:1px solid #888; border-radius:3px; background-color:#FFF; box-shadow:1px 1px 3px #CCC; z-index:900;}
+.vui_win_2 .win_body{margin-top:5px; padding-top:5px; border-top:1px dashed #DDD; min-height:80px;}
+.vui_win_2 .win_footer{display:none;}
+*/
+/*
+//调用示例：2015年11月30日
+<div class="vui_win_2">
+	<b class="_vui_close" onclick="$.win_close(this.parentNode)">×</b>
+	<h5>上传表单</h5>
+	<div class="win_body">
+		<ul>
+		<li>我是上传内容1</li>
+		<li>我是上传内容2</li>
+		<li>我是上传内容3</li>
+		</ul>
+	</div>
+</div>
+*/
+
+
+
+/*
+ * == 窗口 美化窗口 =======================
+ * 注意：
+ * width在使用时应重新设定值，否则窗口的居中计算不准确 20160318
+ *
+*/
+/*
+.vui_win, .vui_upload{padding:10px; width:50%; border:1px solid #888; border-radius:3px; background-color:#F2F2F2; box-shadow:1px 1px 3px #DDD; z-index:900;}
+.vui_win .win_content_box{margin:5px 0; background-color:#FFF; padding:10px;}
+.vui_win .win_content, .vui_upload .win_content{display:table-cell; height:50px;vertical-align:middle;}
+.vui_win .win_footer, .vui_upload .win_footer{margin-top:10px; text-align:right;}
+.vui_win .win_btn, .vui_upload .win_btn{ margin-left:10px;}
+*/
+/*
+// html示例
+<div class="vui_win">
+	<b class="_vui_close" onclick="$.win_close(this.parentNode)">×</b>
+	<h5>提示信息</h5>	
+	<div class="win_content_box">
+		<div class="win_content">
+			运行成功！<br/>
+			运行成功！<br/>
+		</div>
+	</div>
+	<div class="win_footer">
+		<span class="vui_btn win_btn_1">提交</span>
+		<span class="vui_btn win_btn_1" onclick="win_close(this.parentNode.parentNode)">取消</span>
+	</div>
+</div>
+*/
+

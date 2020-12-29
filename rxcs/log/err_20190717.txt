@@ -1,0 +1,55 @@
+
+Meet Error[8]: 2019-07-17 9:02:13
+Undefined index: hz
+Error on line 123 in F:\rxcs\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-07-17 9:04:08
+Undefined index: hz
+Error on line 161 in F:\rxcs\app\rxcs\tpl\dayin.tpl
+Uri is /step-dayin.html
+
+Meet Error[8]: 2019-07-17 9:04:16
+Undefined index: hz
+Error on line 123 in F:\rxcs\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-07-17 9:57:07
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 9:57:17
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 9:57:28
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 9:57:35
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 9:57:56
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 9:58:08
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 9:58:26
+Undefined index: zy
+Error on line 279 in F:\rxcs\app\rxcs\ctl\step.php
+Uri is /step-ajx_tisSbt
+
+Meet Error[8]: 2019-07-17 15:54:02
+Undefined index: hz
+Error on line 123 in F:\rxcs\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html

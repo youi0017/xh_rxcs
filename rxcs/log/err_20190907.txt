@@ -1,0 +1,10 @@
+
+Meet Error[8]: 2019-09-07 18:10:16
+Undefined index: hz
+Error on line 123 in F:\rxcs\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-09-07 18:10:48
+Undefined index: hz
+Error on line 161 in F:\rxcs\app\rxcs\tpl\dayin.tpl
+Uri is /step-dayin.html

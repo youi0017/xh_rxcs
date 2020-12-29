@@ -1,0 +1,23 @@
+html,body{height:100%;}
+body {
+	background:#DEE5EB url("../img/bgStart.jpg") no-repeat center center;
+	display:flex;
+	align-items:center;/*垂直居中*/
+	justify-content: center;/*水平居中*/
+    background-size: 100% 100%;
+}
+
+#tby{width:100%; max-width:760px; padding:20px 0 50px; background-color: rgba(255,255,255,0.75);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000;
+    border: 1px solid #555;
+}
+.title{
+	border-bottom: 1px dashed #555;
+    margin: 0px 0 30px;
+    padding: 30px 0;
+    font-weight:600;
+}
+.form-inline{justify-content: center;}
+.myform{width:60%; margin:0 auto;}
+label{font-weight:600px;}

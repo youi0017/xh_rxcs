@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/**
+ * LAST MODIFY: 2015年11月5日
+ * 加入 class .em系列样式
+ * 更改默认字体："宋体",Verdana
+ * 
+ * 使用前根据页面需要控制：
+ 		1. body及a的font-size
+ 		2. ul(或ol)的list-style-type
+ 		3. overflow的默认属性已更改为hidden，盒不设置height或list设置float,盒都可撑开，如设置hieght将隐藏内容。
+
+ 	说明：
+ 		20170706 取消H6样式，用 .b+.block 代之
+ * 
+ * 
+ */ 
+
+/*********** -- 全局定义  ***********/
+*{margin:0; padding:0; overflow:hidden; box-sizing:border-box;}
+html{overflow:auto;}
+/*body{color:#444; font:87.5% 'Microsoft YaHei', arial, sans-serif; text-align:left; line-height:2; overflow:auto; }*/
+body{color:#444; font:15px 'Microsoft YaHei', arial, sans-serif; text-align:left; line-height:2; overflow:auto; }
+
+
+/**
+ * 
+ * 注意1：
+ *	html,body{height:100%;} //浏览器窗口大小做为盒子大小
+ *	上面代码会使body默认为浏览器高度,但也会导致body的高度无法自动撑开，如需显示为浏览器高度时，在页面中加入上面代码即可
+ * 
+ * 注意2：
+ * 	块级元素，将自动继承父元素的宽度，使用如position:relative;left:50px;
+ * 父标签的宽度将会在增加50px，但可以用margin进行错位
+ * 
+ * 注意3：
+ * 	设置overflow后，IE8、FF和chrome可自动扩展父层元素的高度(它们不能自适高度)，IE6会本身可自适应高度。
+ */
+
+
+
+/*********** 常用标签 *************/
+
+input,select,textarea,button{vertical-align:baseline; outline:none; color:#444; font:14px 'Microsoft YaHei', arial, sans-serif; }
+
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea{word-wrap:break-word; word-break:break-all; padding:0; resize:none;}
+
+
+/* 固定ul/ol列表标记的样式:实心圆 2015年10月25日*/
+/* 无样式 2016年2月23日 */
+ul, ol{list-style:none inside;}
+
+/* 加入 width height 2016年2月22日 */
+img{display:block; margin:0; padding:0; border:0 none; vertical-align:baseline; max-width:100%;}
+
+/* 定义默认的链接样式，仅仅是作为默认样式提供，可以在各自的实例中覆盖掉 */
+a{cursor:pointer;}
+a:link,a:visited,.a:link,.a:visited{text-decoration:none;}
+a:hover,.a:hover{text-decoration:underline;}
+
+.link{text-decoration:underline; cursor:pointer; color:#337ab7;/*#00F*/}
+.link:hover{color:#F00;}
+
+/* H系列标签 */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-weight:500;}
+h5,.h5{font-size:18px;}
+h4,.h4{font-size:22px;}
+h3,.h3{font-size:28px;}
+h2,.h2{font-size:34px;}
+h1,.h1{font-size:40px;}
+
+/*********** 通用样式 *************/
+
+/* 文本 */
+.b{font-weight:bold;}
+.t_l{text-align:left;}
+.t_r{text-align:right;}
+.t_c{text-align:center;}
+.t_d,a.t_d{text-decoration:line-through;}
+.v_m{vertical-align:middle;}
+.v_m_tbl{display:table-cell; vertical-align:middle;}
+.em{font-style:italic;}
+.unline{text-decoration:underline;}
+.no_unline{text-decoration:none;}
+.break{word-wrap:break-word;}
+.no_br{white-space:nowrap;} /*不换行，也不撑开，而是溢出*/
+.l_s_2{letter-spacing:2px;} /*字符间距松散：2px*/
+.red{color:#F00;}
+.blue{color:#00F;}
+.gray{color:#909090;}
+
+/* 定位 */
+.f_l{float:left;}
+.f_r{float:right;}
+.clear{clear:both;}
+.p_a{position:absolute;}
+.p_r{position:relative;}
+.m_r{margin-right:0;}
+.m_l{margin-left:0;}
+.m_t{margin-top:0;}
+.m_b{margin-bottom:0;}
+.b_b{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+
+/* 显示 */
+.show,.block{display:block;}
+.hide{display:none;}
+.inline{display:inline;}
+.bline{display:inline-block;}
+.fit{width:100%; height:100%;}
+/*.tbl-cell{display:table-cell;}*/
+.circle{border-radius:50%;}
+.of_show{overflow:visible;}
+.no_bgc{background-color:transparent !important;}
+
+/* 伪链接 */
+.link{color:rgb(0,0,238); text-decoration:underline; cursor:pointer;}
+.link:hover{color:#F00;}
+
+/* 鼠标 */
+.pointer{cursor:pointer;}
+.help{cursor:help;}
+
+/* 边框 */
+.border{border:1px solid #666;}
+.no_border{border-width:0;}
+
+/* 留白 blank_height */
+.b_h100, .b_h75, .b_h50, .b_h40, .b_h30, .b_h20, .b_h10, .b_h5{clear:both; width:100%; border:none;}
+.b_h100{height:100px; line-height:100px;}
+.b_h75{height:75px; line-height:75px;}
+.b_h50{height:50px; line-height:50px;}
+.b_h40{height:40px; line-height:40px;}
+.b_h30{height:30px; line-height:30px;}
+.b_h20{height:20px; line-height:20px;}
+.b_h10{height:10px; line-height:10px;}
+.b_h5{height:5px; line-height:5px;}
+
+.br100, .br75, .br50, .br40, .br30, .br20, .br10, .br5{clear:both; width:100%; border:none;}
+.br100{height:100px; line-height:100px;}
+.br75{height:75px; line-height:75px;}
+.br50{height:50px; line-height:50px;}
+.br40{height:40px; line-height:40px;}
+.br30{height:30px; line-height:30px;}
+.br20{height:20px; line-height:20px;}
+.br10{height:10px; line-height:10px;}
+.br5{height:5px; line-height:5px;}
+
+/* 首行缩进样式  */
+.t_i0{text-indent:0;}
+.t_i1{text-indent:1em;}
+.t_i2{text-indent:2em;}
+
+/* 内页窗口 */
+._win{width:100%; height:100%; display:block;}
+
+
+
+/*********** 公共样式 20160917 *************/
+/* margin-right */
+.m_r_0{margin-right:0 !important;}
+/* 单行文字超出省略 */
+.dots{white-space:nowrap; text-overflow:ellipsis;}
+/* 透明80% */
+.half8{filter:alpha(opacity=80); opacity:.8;}
+/*-- 测试样式 --*/
+.cs{background-color:#ccc;}
+.cs2{border:solid 1px #F00;}
+/* 以title圆说明 */
+.popup{padding:0 5px; border:1px solid #DDD; border-radius:5px; color:#00F; background-color:#FCFCFC; cursor:pointer;}
+
+
+
+
+/* simpleUi 20160917 */
+/*  UI-COVER 20160917  */
+#__cover,.__cover{position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; background-color:rgba(221,221,221,0.5); z-index:100000;}
+#__msg,.__msg{margin:0 auto; text-align:center;}
+#__iner,.__iner{display:inline-block;padding:30px;background-color:#FFF;}
+
+
+/**/
+._n_valid{
+	padding: 0 3px;
+	color:#F00;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	border-radius: 10px;
+	cursor:pointer;
+}
+
+
+
+/* 表单-按钮0 20170713  */
+.btn{padding:0 7px; line-height:28px; border: 1px solid #999; border-radius:3px; box-shadow: inset -1px -1px 1px #999; background-color: #FFF; cursor: pointer;}
+.btn:hover{text-decoration:none; box-shadow:inset 1px 1px 1px #999;}
+
+/*  表单-输入框 注：默认为20个字符宽度 */
+.input{padding:0 5px; line-height:28px; border:1px solid #999; border-radius:3px; box-sizing: border-box; }
+
+
+
+/* subfield 20161113 列样式+分栏样式 */
+/* 列样式 */
+.column{float:left; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+/* 分栏样式: 2,3,4,5 */
+.second{width:50%; }
+.third{width:33.3%; }
+.forth{width:25%; }
+.fiveth{width:20%; }
+

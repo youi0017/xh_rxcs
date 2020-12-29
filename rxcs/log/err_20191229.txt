@@ -1,0 +1,48 @@
+[29-Dec-2019 12:00:26 PRC] PHP Fatal error:  Cannot use empty array elements in arrays in D:\webserver\www\local\app\rxcs\mdl\wrj.php on line 61
+[29-Dec-2019 12:00:26 PRC] PHP Stack trace:
+[29-Dec-2019 12:00:26 PRC] PHP   1. {main}() D:\webserver\www\local\index.php:0
+[29-Dec-2019 12:00:26 PRC] PHP   2. core\vit::exc() D:\webserver\www\local\index.php:24
+[29-Dec-2019 12:00:26 PRC] PHP   3. call_user_func_array:{D:\webserver\www\local\sys\core\vit.php:125}() D:\webserver\www\local\sys\core\vit.php:125
+[29-Dec-2019 12:00:26 PRC] PHP   4. ctl\step->ti() D:\webserver\www\local\sys\core\vit.php:125
+[29-Dec-2019 12:00:26 PRC] PHP   5. spl_autoload_call() D:\webserver\www\local\app\rxcs\ctl\step.php:118
+[29-Dec-2019 12:00:26 PRC] PHP   6. _my_loader() D:\webserver\www\local\app\rxcs\ctl\step.php:118
+
+Meet Error[8]: 2019-12-29 15:39:10
+Undefined index: cw
+Error on line 123 in D:\webserver\www\local\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-12-29 15:39:10
+Undefined index: hz
+Error on line 123 in D:\webserver\www\local\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-12-29 18:38:52
+Undefined index: app
+Error on line 123 in D:\webserver\www\local\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-12-29 18:38:52
+Undefined index: cw
+Error on line 123 in D:\webserver\www\local\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-12-29 18:42:11
+Undefined index: app
+Error on line 123 in D:\webserver\www\local\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-12-29 18:42:11
+Undefined index: cw
+Error on line 123 in D:\webserver\www\local\app\rxcs\tpl\jieguo.tpl
+Uri is /step-jieguo.html
+
+Meet Error[8]: 2019-12-29 18:42:13
+Undefined index: app
+Error on line 161 in D:\webserver\www\local\app\rxcs\tpl\dayin.tpl
+Uri is /step-dayin.html
+
+Meet Error[8]: 2019-12-29 18:42:13
+Undefined index: cw
+Error on line 161 in D:\webserver\www\local\app\rxcs\tpl\dayin.tpl
+Uri is /step-dayin.html
